@@ -15648,7 +15648,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-console.log("");
 var data = {
   categories: [{
     slug: 'conversion',
@@ -15670,7 +15669,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 33,
       columnNumber: 5
     }
   }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -15678,7 +15677,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 34,
       columnNumber: 7
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15688,7 +15687,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 35,
       columnNumber: 9
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15696,7 +15695,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 36,
       columnNumber: 11
     }
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -15706,7 +15705,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 37,
       columnNumber: 13
     }
   }, "Pacipl shop")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15714,7 +15713,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 41,
       columnNumber: 11
     }
   }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -15723,7 +15722,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 42,
       columnNumber: 13
     }
   }, "Przejd\u017A do kontaktu"))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -15731,7 +15730,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 47,
       columnNumber: 9
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15740,7 +15739,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 48,
       columnNumber: 11
     }
   }, data.categories.map(function (_ref, i) {
@@ -15754,7 +15753,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 50,
         columnNumber: 15
       }
     }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15763,7 +15762,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
+        lineNumber: 51,
         columnNumber: 17
       }
     }, __jsx(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -15774,7 +15773,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 52,
         columnNumber: 19
       }
     }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15783,7 +15782,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55,
+        lineNumber: 53,
         columnNumber: 21
       }
     }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15794,7 +15793,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 54,
         columnNumber: 23
       }
     }, __jsx(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -15807,7 +15806,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57,
+        lineNumber: 55,
         columnNumber: 25
       }
     })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15818,7 +15817,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63,
+        lineNumber: 61,
         columnNumber: 23
       }
     }, __jsx(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -15831,7 +15830,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64,
+        lineNumber: 62,
         columnNumber: 25
       }
     }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -15840,7 +15839,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65,
+        lineNumber: 63,
         columnNumber: 27
       }
     }, title)))))));
@@ -15848,7 +15847,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 75,
       columnNumber: 9
     }
   })));
@@ -16027,7 +16026,7 @@ Link.propTypes = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fdawid%2FDokumenty%2Fpaci-szop%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************/
@@ -16050,5 +16049,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

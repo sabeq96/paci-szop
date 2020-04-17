@@ -12,8 +12,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 
-console.log(process.env.ASSET_PREFIX)
-
 const data = {
   categories: [{
     slug: 'conversion',

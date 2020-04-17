@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 const isProd = (process.env.NODE_ENV || 'production') === 'production'
 
-const assetPrefix = isProd ? '/paci-szop/' : '';
+const assetPrefix = isProd ? '/paci-szop' : '';
 
 module.exports = {
   exportPathMap: function () {

@@ -28600,7 +28600,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbattery&absolutePagePath=%2Fhome%2Fdawid%2FDokumenty%2Fpaci-szop%2Fpages%2Fbattery.js ***!
   \************************************************************************************************************************************/
@@ -28623,5 +28623,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=battery.js.map
