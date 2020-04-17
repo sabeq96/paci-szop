@@ -16,5 +16,8 @@
     "export": "next export -o docs",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1"
   }
 }

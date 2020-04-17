@@ -12,6 +12,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 
+console.log(process.env.ASSET_PREFIX)
+
 const data = {
   categories: [{
     slug: 'conversion',
@@ -47,8 +49,8 @@ export default () => {
         <Box my={6}>
           <Grid container spacing={6}>
             {data.categories.map(({slug, title, image}, i) => (
-              <NextLink href={`/${slug}`} as={`${process.env.ASSET_PREFIX}/${slug}`}>
-                <Grid item xs={12} key={slug}>
+              <NextLink href={`/${slug}`} as={`${process.env.ASSET_PREFIX}/${slug}`} key={slug}>
+                <Grid item xs={12}>
                   <Card raised style={{backgroundColor: 'rgba(0,0,0,0.1)'}}>
                     <Grid container spacing={2}>
                       <Grid item xs={12} md={6} lg={8}>

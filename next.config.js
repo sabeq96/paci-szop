@@ -1,4 +1,8 @@
-const debug = process.env.NODE_ENV !== "production";
+const webpack = require('webpack')
+
+const isProd = (process.env.NODE_ENV || 'production') === 'production'
+
+const assetPrefix = isProd ? '/paci-szop/' : '';
 
 module.exports = {
   exportPathMap: function () {
@@ -9,6 +13,14 @@ module.exports = {
       "/contact": { page: "/contact" },
     }
   },
-  //assetPrefix: '',
-  assetPrefix: !debug ? '/paci-szop/' : '',
+  assetPrefix,
+  webpack: config => {
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
+      }),
+    )
+
+    return config
+  },
 }
