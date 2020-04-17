@@ -48,19 +48,19 @@ const data = {
     { id: '4A', name: '4A', price: 200 },
   ],
   gallery: [{
-    img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
+    img: "https://a.allegroimg.com/s512/039788/b48bb08f4403bb2de1268c5880db/Giant-Trance-E-0-Pro-ebike-rower-elektryczny",
     title: "battery1",
     cols: 2,
   }, {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71P28O72LPL._AC_SX425_.jpg",
+    img: "https://ae01.alicdn.com/kf/HTB1AOTxNFXXXXbuXpXXq6xXFXXX1/Siedzisko-Enduroebike-siedzisko-motocyklowe-siod-o-Dirt-ebike-na-sprzeda.jpg",
     title: "battery2",
     cols: 1,
   }, {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71P28O72LPL._AC_SX425_.jpg",
+    img: "https://images.immediate.co.uk/production/volatile/sites/21/2019/10/GT-ebike-news-Force-Hero-6299af0.jpg?quality=90&resize=620,413",
     title: "battery3",
     cols: 1,
   }, {
-    img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
+    img: "https://www.shimano-steps.com/content/steps/e-bikes/poland/pl/news/testy-ebike-2019-kellys/jcr:content/article/article-par/image.img.1024.low.jpg/1557822085243.jpg",
     title: "battery4",
     cols: 2,
   }],

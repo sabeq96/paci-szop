@@ -47,19 +47,19 @@ const data = {
     { id: '4A', name: '4A', price: 200 },
   ],
   gallery: [{
-    img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
+    img: "https://cdn.shopify.com/s/files/1/0040/9223/1778/products/QQ_20190904154230_c1ef4b7a-0ab4-4625-a1e7-6654a279e104_800x.jpg?v=1571709741",
     title: "battery1",
     cols: 2,
   }, {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71P28O72LPL._AC_SX425_.jpg",
+    img: "https://www.swytchbike.com/wp-content/uploads/universal-ebike-kit-1.jpg",
     title: "battery2",
     cols: 1,
   }, {
-    img: "https://images-na.ssl-images-amazon.com/images/I/71P28O72LPL._AC_SX425_.jpg",
+    img: "https://www.swytchbike.com/wp-content/uploads/universal-ebike-kit-1.jpg",
     title: "battery3",
     cols: 1,
   }, {
-    img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
+    img: "https://cdn.shopify.com/s/files/1/0040/9223/1778/products/QQ_20190904154230_c1ef4b7a-0ab4-4625-a1e7-6654a279e104_800x.jpg?v=1571709741",
     title: "battery4",
     cols: 2,
   }],
@@ -118,7 +118,7 @@ export default () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </Typography>
           <Box my={3}>
-            <GridList cellHeight={220} cols={3}>
+            <GridList cellHeight={260} cols={3}>
               {data.gallery.map((tile, key) => (
                 <GridListTile key={key} cols={tile.cols || 1}>
                   <img src={tile.img} alt={tile.title} />
