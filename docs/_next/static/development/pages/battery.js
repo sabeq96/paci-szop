@@ -28408,6 +28408,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
 
+var assetPrefix = "";
 var NextComposed = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function NextComposed(props, ref) {
   var as = props.as,
       href = props.href,
@@ -28415,11 +28416,11 @@ var NextComposed = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(funct
 
   return __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
     href: href,
-    as: "".concat("", "/").concat(as),
+    as: "".concat(assetPrefix).concat(href),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 5
     }
   }, __jsx("a", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
@@ -28428,7 +28429,7 @@ var NextComposed = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(funct
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 7
     }
   })));
@@ -28462,7 +28463,7 @@ function Link(props) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 12
       }
     }));
@@ -28477,7 +28478,7 @@ function Link(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 50,
       columnNumber: 5
     }
   }));
@@ -28499,7 +28500,7 @@ Link.propTypes = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 65,
       columnNumber: 49
     }
   }));
@@ -28599,7 +28600,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbattery&absolutePagePath=%2Fhome%2Fdawid%2FDokumenty%2Fpaci-szop%2Fpages%2Fbattery.js ***!
   \************************************************************************************************************************************/
@@ -28622,5 +28623,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=battery.js.map
