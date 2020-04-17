@@ -28,6 +28,11 @@ const data = {
     { id: '9300', name: '9300mAh', price: 325.12 },
     { id: '12400', name: '12400mAh', price: 123.15 },
   ],
+  batteryPack: [
+    { id: 'bag', name: 'torba (darmowa)', price: 0 },
+    { id: 'box', name: 'skrzynka', price: 350 },
+    { id: 'bidon', name: 'bidon', price: 200 },
+  ],
   gallery: [{
     img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
     title: "battery1",
@@ -50,6 +55,7 @@ const data = {
 export default () => {
   const [voltage, setVoltage] = React.useState('');
   const [capacity, setCapacity] = React.useState('none');
+  const [batteryPack, setBatteryPack] = React.useState('bag');
   const [fullName, setFullName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [phone, setPhone] = React.useState('');
@@ -123,6 +129,15 @@ export default () => {
                       onChange={setCapacity}
                       label="Dodatkowa pojemność"
                       options={data.capacity}
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={4}>
+                    <Select
+                      id="batteryPack"
+                      value={batteryPack}
+                      onChange={setBatteryPack}
+                      label="Opakowanie bateri"
+                      options={data.batteryPack}
                     />
                   </Grid>
                   <Grid item xs={12} md={6} lg={4}>
