@@ -8,8 +8,9 @@ module.exports = {
   exportPathMap: function () {
     return {
       "/": { page: "/" },
+      "/order": { page: "/order" },
+      "/conversion-pack": { page: "/conversion-pack" },
       "/battery": { page: "/battery" },
-      "/conversion": { page: "/conversion" },
       "/contact": { page: "/contact" },
     }
   },

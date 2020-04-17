@@ -14,13 +14,13 @@ import Copyright from '../src/Copyright';
 
 const data = {
   categories: [{
-    slug: 'conversion',
-    title: 'Zestawy do konwersji',
-    image: 'https://willride.com/media/2018/07/36679868_10155812935803721_1530546569848291328_n.jpg'
-  }, {
-    slug: 'bicycle',
+    slug: 'order',
     title: 'Konwersja roweru',
     image: 'https://www.efficiencyvermont.com/Media/Default/images/white-papers/ebike-standing-field.jpg'
+  }, {
+    slug: 'conversion-pack',
+    title: 'Zestawy do konwersji',
+    image: 'https://willride.com/media/2018/07/36679868_10155812935803721_1530546569848291328_n.jpg'
   }, {
     slug: 'battery',
     title: 'Baterie',

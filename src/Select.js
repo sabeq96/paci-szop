@@ -5,7 +5,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 
-export default ({ id, options, label, value, onChange }) => {
+export default ({ id, options, label, value, disabled, onChange }) => {
   const handleChange = (e) => {
     onChange(e.target.value);
   };
@@ -20,6 +20,7 @@ export default ({ id, options, label, value, onChange }) => {
         onChange={handleChange}
         value={value}
         label={label}
+        disabled={disabled}
       >
         <MenuItem value="" key="0000"></MenuItem>
         {options.map(({id, name}) => (
