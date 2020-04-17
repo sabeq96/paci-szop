@@ -12,10 +12,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 
-// Konwersja roweru
-// Zestaw do konwersji
-// Baterie
-
 const data = {
   categories: [{
     slug: 'conversion',

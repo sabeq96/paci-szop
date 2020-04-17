@@ -27832,6 +27832,40 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 var data = {
+  voltage: [{
+    id: '36V/18Ah',
+    name: '36V / 18Ah',
+    price: 123.60
+  }, {
+    id: '48V/18Ah',
+    name: '48V / 18Ah',
+    price: 123.60
+  }, {
+    id: '60V/24Ah',
+    name: '60V / 24Ah',
+    price: 123.60
+  }],
+  capacity: [{
+    id: 'none',
+    name: 'Brak',
+    price: 0
+  }, {
+    id: '3100',
+    name: '3100mAh',
+    price: 325.12
+  }, {
+    id: '6200',
+    name: '6200mAh',
+    price: 325.12
+  }, {
+    id: '9300',
+    name: '9300mAh',
+    price: 325.12
+  }, {
+    id: '12400',
+    name: '12400mAh',
+    price: 123.15
+  }],
   gallery: [{
     img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
     title: "battery1",
@@ -27856,7 +27890,7 @@ var data = {
       voltage = _React$useState2[0],
       setVoltage = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(''),
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState('none'),
       _React$useState4 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$useState3, 2),
       capacity = _React$useState4[0],
       setCapacity = _React$useState4[1];
@@ -27881,12 +27915,22 @@ var data = {
       description = _React$useState12[0],
       setDescription = _React$useState12[1];
 
+  var calcSum = function calcSum() {
+    return ((data.voltage.find(function (_ref) {
+      var id = _ref.id;
+      return id === voltage;
+    }) || {}).price || 0) + ((data.capacity.find(function (_ref2) {
+      var id = _ref2.id;
+      return id === capacity;
+    }) || {}).price || 0);
+  };
+
   return __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
     maxWidth: "lg",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 65,
       columnNumber: 5
     }
   }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27894,7 +27938,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 66,
       columnNumber: 7
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -27904,7 +27948,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 67,
       columnNumber: 9
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -27912,7 +27956,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 68,
       columnNumber: 11
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -27920,7 +27964,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 69,
       columnNumber: 13
     }
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -27930,7 +27974,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 70,
       columnNumber: 15
     }
   }, "Pacipl shop"))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -27938,7 +27982,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 75,
       columnNumber: 11
     }
   }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -27947,7 +27991,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, "Przejd\u017A do strony g\u0142\xF3wnej")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -27955,7 +27999,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 80,
       columnNumber: 11
     }
   }, __jsx(_src_Link__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -27964,7 +28008,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 81,
       columnNumber: 13
     }
   }, "Przejd\u017A do kontaktu"))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27972,7 +28016,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 86,
       columnNumber: 9
     }
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -27982,7 +28026,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 87,
       columnNumber: 11
     }
   }, "Baterie"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -27990,7 +28034,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 90,
       columnNumber: 11
     }
   }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27998,7 +28042,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 93,
       columnNumber: 11
     }
   }, __jsx(_material_ui_core_GridList__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -28007,7 +28051,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 94,
       columnNumber: 13
     }
   }, data.gallery.map(function (tile, key) {
@@ -28017,7 +28061,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
+        lineNumber: 96,
         columnNumber: 17
       }
     }, __jsx("img", {
@@ -28026,7 +28070,7 @@ var data = {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 97,
         columnNumber: 19
       }
     }));
@@ -28035,7 +28079,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 102,
       columnNumber: 11
     }
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -28045,7 +28089,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 103,
       columnNumber: 13
     }
   }, "Z\u0142\xF3\u017C zam\xF3wienie"), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -28053,7 +28097,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 106,
       columnNumber: 13
     }
   }, __jsx("form", {
@@ -28062,7 +28106,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 107,
       columnNumber: 15
     }
   }, __jsx("input", {
@@ -28072,7 +28116,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 108,
       columnNumber: 17
     }
   }), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28082,7 +28126,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 109,
       columnNumber: 17
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28093,7 +28137,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 110,
       columnNumber: 19
     }
   }, __jsx(_src_Select__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -28101,20 +28145,11 @@ var data = {
     value: voltage,
     onChange: setVoltage,
     label: "Napi\u0119cie",
-    options: [{
-      id: '36V/18Ah',
-      name: '36V / 18Ah'
-    }, {
-      id: '48V/18Ah',
-      name: '48V / 18Ah'
-    }, {
-      id: '60V/24Ah',
-      name: '60V / 24Ah'
-    }],
+    options: data.voltage,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 111,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28125,7 +28160,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 119,
       columnNumber: 19
     }
   }, __jsx(_src_Select__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -28133,26 +28168,11 @@ var data = {
     value: capacity,
     onChange: setCapacity,
     label: "Dodatkowa pojemno\u015B\u0107",
-    options: [{
-      id: 'none',
-      name: 'Brak'
-    }, {
-      id: '3100',
-      name: '3100mAh'
-    }, {
-      id: '6200',
-      name: '6200mAh'
-    }, {
-      id: '9300',
-      name: '9300mAh'
-    }, {
-      id: '12400',
-      name: '12400mAh'
-    }],
+    options: data.capacity,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 120,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28163,7 +28183,28 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 128,
+      columnNumber: 19
+    }
+  }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    style: {
+      fontWeight: 'bold'
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129,
+      columnNumber: 21
+    }
+  }, "Suma: ", calcSum(), "z\u0142")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    item: true,
+    xs: 12,
+    md: 6,
+    lg: 3,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
       columnNumber: 19
     }
   }, __jsx(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -28179,7 +28220,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 134,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28190,7 +28231,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 144,
       columnNumber: 19
     }
   }, __jsx(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -28206,7 +28247,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 145,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28217,7 +28258,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 155,
       columnNumber: 19
     }
   }, __jsx(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -28233,7 +28274,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 156,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28243,7 +28284,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153,
+      lineNumber: 166,
       columnNumber: 19
     }
   }, __jsx(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -28261,7 +28302,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154,
+      lineNumber: 167,
       columnNumber: 21
     }
   })), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -28271,7 +28312,7 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166,
+      lineNumber: 179,
       columnNumber: 19
     }
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -28281,14 +28322,14 @@ var data = {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167,
+      lineNumber: 180,
       columnNumber: 21
     }
   }, "Wy\u015Blij"))))))), __jsx(_src_Copyright__WEBPACK_IMPORTED_MODULE_13__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176,
+      lineNumber: 189,
       columnNumber: 9
     }
   })));
@@ -28558,7 +28599,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbattery&absolutePagePath=%2Fhome%2Fdawid%2FDokumenty%2Fpaci-szop%2Fpages%2Fbattery.js ***!
   \************************************************************************************************************************************/
@@ -28581,5 +28622,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=battery.js.map

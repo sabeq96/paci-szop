@@ -16,6 +16,18 @@ import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 
 const data = {
+  voltage: [
+    { id: '36V/18Ah', name: '36V / 18Ah', price: 123.60 },
+    { id: '48V/18Ah', name: '48V / 18Ah', price: 123.60 },
+    { id: '60V/24Ah', name: '60V / 24Ah', price: 123.60 },
+  ],
+  capacity: [
+    { id: 'none', name: 'Brak', price: 0 },
+    { id: '3100', name: '3100mAh', price: 325.12 },
+    { id: '6200', name: '6200mAh', price: 325.12 },
+    { id: '9300', name: '9300mAh', price: 325.12 },
+    { id: '12400', name: '12400mAh', price: 123.15 },
+  ],
   gallery: [{
     img: "https://components101.com/sites/default/files/components/How-to-choose-a-Battery.jpg",
     title: "battery1",
@@ -37,11 +49,17 @@ const data = {
 
 export default () => {
   const [voltage, setVoltage] = React.useState('');
-  const [capacity, setCapacity] = React.useState('');
+  const [capacity, setCapacity] = React.useState('none');
   const [fullName, setFullName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [phone, setPhone] = React.useState('');
   const [description, setDescription] = React.useState();
+
+  const calcSum = () => (
+    ((data.voltage.find(({ id }) => id === voltage) || {}).price || 0)
+    +
+    ((data.capacity.find(({ id }) => id === capacity) || {}).price || 0)
+  );
 
   return (
     <Container maxWidth="lg">
@@ -95,11 +113,7 @@ export default () => {
                       value={voltage}
                       onChange={setVoltage}
                       label="Napięcie"
-                      options={[
-                        {id: '36V/18Ah', name: '36V / 18Ah'},
-                        {id: '48V/18Ah', name: '48V / 18Ah'},
-                        {id: '60V/24Ah', name: '60V / 24Ah'},
-                      ]}
+                      options={data.voltage}
                     />
                   </Grid>
                   <Grid item xs={12} md={6} lg={3}>
@@ -108,14 +122,13 @@ export default () => {
                       value={capacity}
                       onChange={setCapacity}
                       label="Dodatkowa pojemność"
-                      options={[
-                        {id: 'none', name: 'Brak'},
-                        {id: '3100', name: '3100mAh'},
-                        {id: '6200', name: '6200mAh'},
-                        {id: '9300', name: '9300mAh'},
-                        {id: '12400', name: '12400mAh'},
-                      ]}
+                      options={data.capacity}
                     />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={3}>
+                    <Typography style={{ fontWeight: 'bold' }}>
+                      Suma: {calcSum()}zł
+                    </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={3}>
                     <TextField
