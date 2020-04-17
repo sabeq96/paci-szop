@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a,b){return {"/":[a],"/battery":[a,b],"/contact":[a],"/conversion-pack":[a,b],"/index":[a],"/order":[a,b]}}("static\u002Fchunks\u002F811f08d94ec3137852c998660ae9f4d3a4622730.2df39bf2438f0237d3be.js","static\u002Fchunks\u002Fcf560c8cb038930d0686a371a6c958c87d2f2ba2.533349e093555a368a01.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

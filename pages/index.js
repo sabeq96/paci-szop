@@ -48,7 +48,7 @@ export default () => {
           <Grid container spacing={6}>
             {data.categories.map(({slug, title, image}, i) => (
               <NextLink href={`/${slug}`} as={`${process.env.ASSET_PREFIX}/${slug}`} key={slug}>
-                <Grid item xs={12}>
+                <Grid item xs={12} style={{ cursor: 'pointer' }}>
                   <Card raised style={{backgroundColor: 'rgba(0,0,0,0.1)'}}>
                     <Grid container spacing={2}>
                       <Grid item xs={12} md={6} lg={8}>

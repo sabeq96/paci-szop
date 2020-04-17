@@ -28777,7 +28777,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Forder&absolutePagePath=%2Fhome%2Fdawid%2FDokumenty%2Fpaci-szop%2Fpages%2Forder.js ***!
   \********************************************************************************************************************************/
@@ -28800,5 +28800,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=order.js.map

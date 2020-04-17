@@ -15759,6 +15759,9 @@ var data = {
     }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
       item: true,
       xs: 12,
+      style: {
+        cursor: 'pointer'
+      },
       __self: _this,
       __source: {
         fileName: _jsxFileName,
