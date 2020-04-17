@@ -22,7 +22,6 @@ export default ({ id, options, label, value, disabled, onChange }) => {
         label={label}
         disabled={disabled}
       >
-        <MenuItem value="" key="0000"></MenuItem>
         {options.map(({id, name}) => (
           <MenuItem value={id} key={id}>{name}</MenuItem>
         ))}
