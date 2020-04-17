@@ -47,7 +47,7 @@ export default () => {
         <Box my={6}>
           <Grid container spacing={6}>
             {data.categories.map(({slug, title, image}, i) => (
-              <NextLink href={`/${slug}`}>
+              <NextLink href={`/${slug}`} as={`${process.env.ASSET_PREFIX}/${slug}`}>
                 <Grid item xs={12} key={slug}>
                   <Card raised style={{backgroundColor: 'rgba(0,0,0,0.1)'}}>
                     <Grid container spacing={2}>
