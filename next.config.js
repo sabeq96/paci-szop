@@ -10,5 +10,5 @@ module.exports = {
     }
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/paci-szop/' : '',
+  assetPrefix: !debug ? '/paci-szop/docs' : '',
 }
