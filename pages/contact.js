@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -14,9 +15,11 @@ export default () => {
       <Box my={4}>
         <Grid container spacing={2} alignItems="baseline">
           <Grid item>
-            <Typography variant="h1" component="h1" gutterBottom>
-              Pacipl shop
-            </Typography>
+            <NextLink href="/">
+              <Typography variant="h1" component="h1" gutterBottom>
+                Pacipl shop
+              </Typography>
+            </NextLink>
           </Grid>
           <Grid item>
             <Link href="/index" color="secondary">
